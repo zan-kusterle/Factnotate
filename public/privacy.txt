@@ -1,0 +1,3 @@
+To get annotations for a specific webpage Factnotate sends the URL of every website that you visit to our servers. This means we can see which websites someone opens. We do not purposefully send any identifiable information to our servers. We have also explicitly configured our server to not store any identifiable information such an IP address or which browser you are using. We only use this information to monitor traffic and fix bugs. We never share this information with anyone.
+
+To fund the development of this project I am also set as a **10% beneficiary**, which means I receive 10% share of rewards when you use this app to post. 

@@ -1,0 +1,25 @@
+.line {
+    font-size: 14px;
+    font-weight: normal !important;
+    line-height: 20px;
+    display: block;
+    word-break: break-word;
+
+    &:last-child {
+        display: inline;
+    }
+}
+
+.webpageUrl {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+    .line {
+        font-size: 16px;
+    }
+
+    .webpageUrl {
+        font-weight: normal;
+    }
+}

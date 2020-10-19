@@ -1,0 +1,34 @@
+
+{
+    "name": "Factnotate",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "Vote on anything, anywhere on the web",
+    "homepage_url": "https://factnotate.io",
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["embed.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "browser_action": {
+      "default_title": "Factnotate this webpage"
+    },
+    "permissions": [
+      "https://*/*",
+      "http://*/*",
+      "tabs",
+      "storage",
+      "contextMenus"
+    ],
+    "icons": {
+      "96": "logo.png"
+    },
+    "content_security_policy": "script-src 'self'; object-src 'self'; img-src 'self';",
+    "web_accessible_resources": []
+}

@@ -1,0 +1,99 @@
+@import './common';
+
+.root {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 5;
+    display: flex;
+    font-family: @font-family;
+}
+
+.rectangle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: rgba(216, 172, 51, 0.35);
+    pointer-events: all;
+}
+
+.linkedNodes {
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    max-width: 400px;
+    box-shadow: 1px 3px 3px 4px rgba(0, 0, 0, 0.06);
+    background-color: #333;
+    pointer-events: all;
+    color: white;
+    cursor: pointer;
+}
+
+.linkedNode {
+    padding: 8px;
+    padding-right: 12px;
+
+    &:hover {
+        background-color: #111;
+    }
+}
+
+.videoAnnotation {
+    padding: 6px 12px;
+    display: flex;
+    background: #fffd;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 500px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+.comment {
+    z-index: 10;
+    pointer-events: all;
+    width: 360px;
+    border: 1px solid #ddd;
+}
+
+.annotateIcon {
+    z-index: 10;
+    pointer-events: all;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    > svg {
+        width: 210%;
+        margin-left: -3px;
+    }
+}
+
+.videoAnnotationsWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.annotateVideoButton {
+    box-sizing: border-box;
+    pointer-events: all;
+    margin-left: 10px;
+    cursor: pointer;
+    height: min-content;
+    align-items: center;
+
+    > svg {
+        width: 36px;
+    }
+}
